@@ -57,7 +57,7 @@ function Strategy(options, verify) {
             };
             break;
         case "CAS3.0":
-            this._validateUri = "/p3/serviceValidate";
+            this._validateUri = "/serviceValidate";
             this._validate = function (req, body, verified) {
                 parseString(body, {
                     trim: true,
